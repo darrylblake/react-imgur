@@ -14,6 +14,14 @@ module.exports = React.createClass({
       >
       {this.props.animated && !this.state.hovering ? this.icon() : null} 
       {this.props.animated && this.state.hovering ? this.video() : this.image()}
+      {this.state.hovering ? this.inset() : null}
+    </div>
+  },
+  inset: function() {
+    return <div className="inset">
+      Views: {this.props.views}
+      <br />
+      Upvotes: {this.props.ups}
     </div>
   },
   video: function() {

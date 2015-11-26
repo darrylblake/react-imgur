@@ -3,14 +3,25 @@
   position: relative;
   img {
     height: 200px;
-    
+    width: 200px;
   }
   video {
     height: 200px;
-    
+    width: 200px;
     vertical-align: middle;
     background-color: black;
   }
+}
+
+.inset {
+  position: absolute;
+  z-index: 1;
+  background: blue;
+  width: 100%;
+  padding: 5px;
+  background: black;
+  color: white;
+  opacity: 0.8;
 }
 
 .glyphicon-play {
